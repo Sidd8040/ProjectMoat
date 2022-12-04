@@ -23,7 +23,6 @@
 							border:0px solid black;
 							position:sticky;
 							top:0px;
-					
 					}
 					
 					.navbar-nav{
@@ -54,14 +53,16 @@
 					}
 					.coldiv{
 						border: 0px solid red;
-						height:700px;
+						height:600px;
+						background-image: url("images/menu.jpg");
+						background-repeat: no-repeat;
+						background-size: cover
 						
 				
 					}
 					
-					.hometext{
-						font-size:100px;
-						text-align: center;
+					#hometext{
+						font-size:80px;
 						margin-top: 100px;
 					
 					}
@@ -73,15 +74,16 @@
 					
 					#coldiv{
 						border: 0px solid red;
-						height:800px;
-						background-image: url("images/homeimg.jpg");
+						height:850px;
+						background-image: url(images/contact.jpg);
 						background-repeat: no-repeat;
 						background-size: cover
+						
 						
 					}
 					
 					#spanlogo{
-						margin-left: 250px;
+						margin-left: 200px;
 					
 					}
 					
@@ -97,6 +99,12 @@
 					
 					}
 					
+					#pro{
+					border:0px solid black;
+					margin-top: 60px;
+					height:800px;
+					}
+					
 					#bh{
 						border-radius:20px;
 						background-color:black;
@@ -109,9 +117,6 @@
 						padding:2px;
 					
 					}
-
-
-
 				</style>
 				
 				
@@ -169,34 +174,70 @@
 			
 					<div class="row">
 							<!-- COL1 -->
-							<div class="col-md-6">
-							<div class="coldiv">
+							<div id="pro" class="col-md-9">
+							<h3>PROJECTS</h3>
+							<hr width="120px">
+							<p>Below are a few list of Projects Completed out of Many. </p>
 							
-							<h1 class="hometext">SEGUN</h1>
 							<br>
-							<p class="homet">Hi, my name is Segun Samuel Olatunbosun - but call me Sidd :)</p>
-							<p class="homet">I am a Full Stack Software Developer</p>
-							
-							<p class="homet">I work with Developers to design Webpages, algorithms e.t.c, and i produce clean, efficient codes</p> 
-							<p class="homet">based on specifications of which i also Troubleshoot, Debug and upgrade existing Softwares.</p>
-							<br>
-							<p class="homet"><a href="" data-bs-toggle="modal" data-bs-target="#contactusmodal">Tap in here to Book an Appointment Today!</a></p>
-							<br>
-							<br>
-							<br>
-							<br>
-							
-							<span id="spanlogo"><a href=""><img src="icons/instagram2.png"></a></span> &nbsp <span><a href=""><img src="icons/twitter2.png"></a></span> &nbsp <span><a href=""><img src="icons/facebook2.png"></a></span> &nbsp <span><a href=""><img src="icons/git2.png"></a></span>
-							
-							</div>
+							<hr>
+																		<div class="accordion" id="accordionExample">
+											  <div class="accordion-item">
+												<h2 class="accordion-header" id="headingOne">
+												  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													PROJECT 1
+												  </button>
+												</h2>
+												<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+												  <div class="accordion-body">
+													<strong>This is a Demo Social WEBSITE/WEBPAGE for Teenagers .</strong>
+													<img src="images/port1.png" width="450px" height="300px">
+												  </div>
+												</div>
+											  </div>
+											  <div class="accordion-item">
+												<h2 class="accordion-header" id="headingTwo">
+												  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+													PROJECT 2
+												  </button>
+												</h2>
+												<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+												  <div class="accordion-body">
+													<strong>This is A Demo WEBSITE/WEBPAGE for an NGO. Organization.</strong>
+													<span><img src="images/port4.png" width="450px" height="300px"></span>
+												  </div>
+												</div>
+											  </div>
+											  <div class="accordion-item">
+												<h2 class="accordion-header" id="headingThree">
+												  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+													PROJECT 3
+												  </button>
+												</h2>
+												<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+												  <div class="accordion-body">
+													<strong>This is my third project which is a Dating/Marriage WEBPAGE</strong>
+													<span><img src="images/port2.png" width="450px" height="300px"></span>
+												  </div>
+												</div>
+											  </div>
+											</div>
+								
+											
+										
+											
 							
 							
 							</div>
 							
 							
 							<!-- COL2 -->
-							<div class="col-md-6">
-							<div id="coldiv"></div>
+							<div class="col-md-3">
+							<div id="coldiv">
+							
+									
+									
+							</div>
 							</div>
 					</div>
 			
@@ -234,11 +275,12 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        
+       
       </div>
     </div>
   </div>
 </div>
+
 
 
 			<!-- OFF CANVAS -->
@@ -250,7 +292,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <h5>Segun Samuel Olatunbosun</h5>
-  <div class="offcanvas-body">
+ <div class="offcanvas-body">
     <div id="cavasb">
 		
 		<h5><a href="index.html">HOME</a></h5>
